@@ -7,15 +7,15 @@ const ButtonStyled = styled(motion.button)`
   font-size: 1.2rem;
   border: none;
   border-radius: 8px;
-  background: #ff4757;
-  color: white;
+  background: #00E6FF;
+  color:rgb(0, 0, 0);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   outline: none;
 
   &:hover {
-    background: #ff6b81;
-    box-shadow: 0px 5px 15px rgba(255, 71, 87, 0.3);
+    background:rgb(0, 156, 173);
+    box-shadow: 0px 5px 15px rgba(71, 255, 230, 0.3);
   }
 
   &:active {

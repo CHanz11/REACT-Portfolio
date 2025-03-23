@@ -46,7 +46,7 @@ const Title = styled(motion.h2)`
   transition: color 0.3s ease-in-out;
 
   ${SectionContainer}:hover & {
-    color: #ffd700;
+    color: #00E6FF;
   }
 `;
 

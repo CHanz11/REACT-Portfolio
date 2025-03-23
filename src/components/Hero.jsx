@@ -35,18 +35,21 @@ const Description = styled.p`
   line-height: 1.5;
 `;
 
-const SubscribeButton = styled(motion.button)`
-  background-color: white;
-  color: #1e1b53;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
+const CTAButton = styled(motion.a)`
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: black;
+  background: #00E6FF;
+  border-radius: 8px;
   font-weight: bold;
+  text-decoration: none;
   transition: 0.3s ease;
-
+  
   &:hover {
-    background: #ddd;
+    background: #00E6FF;
+    transform: scale(1.1);
   }
 `;
 
@@ -104,11 +107,11 @@ const SocialIcons = styled.div`
 
 const SocialIcon = styled(motion.a)`
   font-size: 2rem;
-  color: #ffcc00;
+  color: #00E6FF;
   transition: 0.3s ease;
 
   &:hover {
-    color: #ff9900;
+    color: #00E6FF;
     transform: scale(1.2);
   }
 `;
@@ -151,8 +154,8 @@ function Hero() {
       <HeroText>
         <Title>
           Hi,<br />I'm{" "}
-          <span style={{ color: "#ffcc00" }}>{typedText}</span>
-          <span style={{ color: "#ffcc00", opacity: cursorVisible ? 1 : 0 }}>
+          <span style={{ color: "#00E6FF" }}>{typedText}</span>
+          <span style={{ color: "#00E6FF", opacity: cursorVisible ? 1 : 0 }}>
             |
           </span>
         </Title>
@@ -165,7 +168,7 @@ function Hero() {
           back-end development, ensuring seamless functionality and design. Let's build 
           something amazing together!
         </Description>
-        <SubscribeButton whileHover={{ scale: 1.1 }}>Subscribe Now</SubscribeButton>
+        <CTAButton href="#projects">View My Work</CTAButton>
 
         <SocialIcons>
           <SocialIcon href="https://github.com/" target="_blank">
