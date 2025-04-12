@@ -22,6 +22,8 @@
     "react-router-dom": "^7.4.0",
     "react-scroll": "^1.9.3",
     "react-scroll-parallax": "^3.4.5",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.16"
   },
   "devDependencies": {

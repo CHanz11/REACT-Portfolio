@@ -8,6 +8,9 @@ import SmoothScroll from "./components/SmoothScroll";
 import Button from "./components/Button";
 import "./App.css";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 
 
 
@@ -41,30 +44,7 @@ function App() {
       <CustomCursor />
 
       {/* Navigation Bar */}
-      <nav className="navbar">
-        <ul>
-          <li>
-            <Link to="hero" smooth={true} duration={500} className={activeSection === "hero" ? "active" : ""}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="about" smooth={true} duration={500} className={activeSection === "about" ? "active" : ""}>
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link to="projects" smooth={true} duration={500} className={activeSection === "projects" ? "active" : ""}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={500} className={activeSection === "contact" ? "active" : ""}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar activeSection={activeSection} />
 
       {/* Sections with IDs */}
       <section id="hero">
@@ -76,21 +56,11 @@ function App() {
       </section>
 
       <section id="projects">
-        <Section
-          title="Projects"
-          text="Here are some of my featured projects that showcase my skills and creativity."
-          image="/images/project-2.jpg"
-        >
-          <Button text="View More" onClick={() => console.log("View More Clicked!")} />
-        </Section>
+        <Projects />
       </section>
 
       <section id="contact">
-        <Section
-          title="Contact"
-          text="Let's work together! Reach out to me via email or social media."
-          image="images/contact.jpg"
-        />
+        <Contact />
       </section>
     </ParallaxProvider>
   );
